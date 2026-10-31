@@ -1,0 +1,62 @@
+/* =====================================================================
+   Lesley Boys huisstijl — tokens (kleuren, letter, maten; licht en donker)
+   Bron: Corporate Identity Lesley Boys (Create the Brand, 3 juli 2024)
+   Kleuren: wit, Lesley Boys-blauw #039ED9, zwart. Letter: Work Sans.
+   ===================================================================== */
+/* =====================================================================
+   Lesley Boys Intranet — huisstijl volgens het brandbook
+   (Corporate Identity Lesley Boys, Create the Brand, 3 juli 2024)
+   Kleuren: wit, Lesley Boys-blauw #039ED9, zwart. Letter: Work Sans.
+   Layout: zwarte zijbalk met het beeldlogo als watermerk, rustig werkvlak,
+   blauw/zwart diagonaal op het inlogscherm, pijlen en sterren als accent.
+   ===================================================================== */
+:root {
+  --bg: #F3F5F7;
+  --surface: #FFFFFF;
+  --surface-2: #E9EDF1;
+  --ink: #0B0F14;
+  --muted: #55606B;
+  --line: #D9DFE5;
+
+  --zwart: #06080B;          /* zwart uit het brandbook: zijbalk, scorebord */
+  --zwart-ink: #FFFFFF;
+  --zwart-muted: #9AA6B2;
+  --zwart-lijn: rgba(255, 255, 255, .12);
+
+  --blauw: #039ED9;          /* Lesley Boys-blauw: vlakken, knoppen, accenten */
+  --op-blauw: #000000;       /* tekst op blauw */
+  --blauw-tekst: #00709E;    /* blauw voor kleine tekst/links op licht */
+  --blauw-zacht: #E0F2FA;
+
+  --ok: #17703F;   --ok-bg: #DDF1E5;
+  --warn: #8A5300; --warn-bg: #FCEBC8;
+  --bad: #B0241B;  --bad-bg: #FADDD9;
+  --focus: #039ED9;
+
+  --f: "Work Sans", "Segoe UI", system-ui, -apple-system, sans-serif;
+
+  --r: 10px;
+  --r-sm: 6px;
+  --shadow: 0 1px 2px rgba(11, 15, 20, .06), 0 8px 24px rgba(11, 15, 20, .05);
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0B0F14; --surface: #131A21; --surface-2: #1A232C;
+    --ink: #E8EDF2; --muted: #95A2AF; --line: #25303B;
+    --zwart: #040608; --zwart-ink: #FFFFFF; --zwart-muted: #8E9AA6; --zwart-lijn: rgba(255, 255, 255, .1);
+    --blauw-tekst: #3DBAEB; --blauw-zacht: #0D2A38;
+    --ok: #5ACB8F; --ok-bg: #12301F; --warn: #F0B04A; --warn-bg: #36270C; --bad: #F3887F; --bad-bg: #3A1714;
+    --shadow: 0 1px 2px rgba(0, 0, 0, .35), 0 8px 24px rgba(0, 0, 0, .3);
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0B0F14; --surface: #131A21; --surface-2: #1A232C;
+  --ink: #E8EDF2; --muted: #95A2AF; --line: #25303B;
+  --zwart: #040608; --zwart-ink: #FFFFFF; --zwart-muted: #8E9AA6; --zwart-lijn: rgba(255, 255, 255, .1);
+  --blauw-tekst: #3DBAEB; --blauw-zacht: #0D2A38;
+  --ok: #5ACB8F; --ok-bg: #12301F; --warn: #F0B04A; --warn-bg: #36270C; --bad: #F3887F; --bad-bg: #3A1714;
+  --shadow: 0 1px 2px rgba(0, 0, 0, .35), 0 8px 24px rgba(0, 0, 0, .3);
+  color-scheme: dark;
+}

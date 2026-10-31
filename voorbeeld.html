@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lesley Boys huisstijl · voorbeeld</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800&display=swap">
+  <link rel="stylesheet" href="huisstijl.css">
+  <style>
+    main { max-width: 1040px; margin: 0 auto; padding: 32px 20px 64px; display: grid; gap: 28px; }
+    .kleuren { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; }
+    .vlak { border-radius: var(--r); padding: 16px; min-height: 96px; display: grid; align-content: end; border: 1px solid var(--line); }
+    .vlak b { font-weight: 700; } .vlak span { font-size: 13px; }
+    .rij { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+    .logos { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; }
+    .logos div { display: grid; place-items: center; padding: 20px; border-radius: var(--r); border: 1px solid var(--line); min-height: 120px; }
+    .logos .donker { background: var(--zwart); }
+    .logos img { max-height: 72px; }
+  </style>
+</head>
+<body>
+<main>
+  <header class="paginakop">
+    <div><p class="eyebrow">Lesley Boys</p><h1>Huisstijl</h1><p class="sub">Eén bron voor alle Lesley Boys-sites: kleuren, letter, logo's en onderdelen. Aim for excellence.</p></div>
+    <span class="datumstempel">Versie 1.0</span>
+  </header>
+
+  <section class="paneel">
+    <div class="paneel-kop"><h2>Kleuren</h2></div>
+    <div class="kleuren">
+      <div class="vlak" style="background:#039ED9;color:#000"><b>Lesley Boys-blauw</b><span>#039ED9 · --blauw</span></div>
+      <div class="vlak" style="background:#06080B;color:#fff"><b>Zwart</b><span>#06080B · --zwart</span></div>
+      <div class="vlak" style="background:#fff;color:#0B0F14"><b>Wit</b><span>#FFFFFF · --surface</span></div>
+      <div class="vlak" style="background:var(--blauw-zacht);color:var(--blauw-tekst)"><b>Blauw zacht</b><span>--blauw-zacht</span></div>
+    </div>
+  </section>
+
+  <section class="paneel">
+    <div class="paneel-kop"><h2>Knoppen en labels</h2></div>
+    <div class="rij">
+      <button class="knop">Opslaan</button>
+      <button class="knop tweede">Annuleren</button>
+      <button class="knop klein">Klein</button>
+      <button class="knop gevaar">Verwijderen</button>
+      <span class="chip ok"><span class="stip"></span>Afgerond</span>
+      <span class="chip warn"><span class="stip"></span>Concept</span>
+      <span class="chip bad"><span class="stip"></span>Verlopen</span>
+      <span class="chip accent"><span class="stip"></span>Nieuw</span>
+    </div>
+  </section>
+
+  <div class="samenvatting">
+    <div class="stat accent"><span>Leden</span><strong class="num">248</strong></div>
+    <div class="stat ok"><span>Teams</span><strong class="num">19</strong></div>
+    <div class="stat warn"><span>Open taken</span><strong class="num">7</strong></div>
+    <div class="stat bad"><span>Verlopen</span><strong class="num">1</strong></div>
+  </div>
+
+  <div class="kaarten">
+    <article class="kaart"><h3>Kaart</h3><p>Voor lijsten van documenten, apps of nieuws.</p><div class="voet"><span class="inforegel">Bijgewerkt vandaag</span><button class="knop klein tweede">Openen</button></div></article>
+    <article class="kaart"><h3>Formulierveld</h3><label class="veld"><span>Naam</span><input type="text" placeholder="bijv. O13-1"></label></article>
+  </div>
+
+  <section class="paneel">
+    <div class="paneel-kop"><h2>Logo's</h2></div>
+    <div class="logos">
+      <div><img src="logo/lesley-boys-logo-kleur.svg" alt="Logo kleur"></div>
+      <div><img src="logo/lesley-boys-logo-zwart.svg" alt="Logo zwart"></div>
+      <div class="donker"><img src="logo/lesley-boys-logo-wit.svg" alt="Logo wit"></div>
+      <div class="donker"><img src="logo/lesley-boys-woordmerk-wit.svg" alt="Woordmerk wit"></div>
+    </div>
+  </section>
+</main>
+</body>
+</html>

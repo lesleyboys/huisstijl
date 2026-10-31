@@ -1,0 +1,31 @@
+/* =====================================================================
+   Lesley Boys huisstijl — basis (tekst, links, focus)
+   Bron: Corporate Identity Lesley Boys (Create the Brand, 3 juli 2024)
+   Kleuren: wit, Lesley Boys-blauw #039ED9, zwart. Letter: Work Sans.
+   ===================================================================== */
+/* ---------- basis ---------- */
+*, *::before, *::after { box-sizing: border-box; }
+html, body { height: 100%; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font: 400 15px/1.55 var(--f);
+  -webkit-font-smoothing: antialiased;
+}
+[hidden] { display: none !important; }
+img { max-width: 100%; }
+a { color: var(--blauw-tekst); text-underline-offset: 3px; }
+h1, h2, h3 { margin: 0; text-wrap: balance; }
+p { margin: 0; }
+:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; border-radius: 4px; }
+.num { font-variant-numeric: tabular-nums; }
+.mono { font-variant-numeric: tabular-nums; letter-spacing: .02em; }
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+/* Brandbook-label: wijd gespatieerde hoofdletters */
+.eyebrow {
+  font: 600 11px/1.3 var(--f);
+  letter-spacing: .32em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
