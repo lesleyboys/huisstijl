@@ -25,7 +25,7 @@ Eén bron voor de vormgeving van alle Lesley Boys-sites: lesleyboys.nl, club, cl
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800&display=swap">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lesleyboys/huisstijl@1/huisstijl.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lesleyboys/huisstijl@v1.0/huisstijl.css">
 ```
 
 De jsDelivr-link werkt alleen als deze repo **openbaar** is (de logo's en kleuren zijn toch al openbaar). Blijft de repo privé, kopieer dan `huisstijl.css` en `logo/` in de site.
@@ -35,8 +35,9 @@ Een eigen site past alleen aan wat écht anders is, in een eigen CSS-bestand ná
 ## Nieuwe versie uitbrengen
 
 1. Wijzig de bestanden, controleer `voorbeeld.html`.
-2. Commit en maak een tag: `git tag v1.1 && git push --tags`. Sites met `@1` krijgen de nieuwe versie vanzelf (jsDelivr-cache: tot 12 uur).
-3. Een wijziging die sites kan breken (een klasse hernoemd) = nieuwe hoofdversie `v2.0`; sites stappen dan zelf over.
+2. Maak in GitHub een release (Releases → Draft a new release) met een versienummer in drie delen, bijv. `v1.1.0`.
+3. Sites gebruiken een vaste versie (`@v1.0`) en stappen bewust over. Vanaf `v1.1.0` kan ook `@1`: dan krijgt een site elke nieuwe 1.x-versie vanzelf (jsDelivr-cache: tot 12 uur).
+4. Een wijziging die sites kan breken (een klasse hernoemd) = nieuwe hoofdversie `v2.0.0`.
 
 ## Afspraken
 
