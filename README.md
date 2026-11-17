@@ -15,6 +15,7 @@ Eén bron voor de vormgeving van alle Lesley Boys-sites: lesleyboys.nl, club, cl
 | `tokens.css` | Alleen de kleuren, letter en maten als CSS-variabelen (`--blauw`, `--zwart`, `--f`, `--r` …) |
 | `basis.css` | Tekst, links, focus, hulpklassen (`.eyebrow`, `.num`, `.sr-only`) |
 | `componenten.css` | `.knop`, `.veld`, `.paginakop`, `.paneel`, `.kaart`, `.chip`, `.stat`, `.tegel`, `.toast` |
+| `kleine-site.css` | Opmaak voor kleine sites met één pagina (socio, fideles): `.balk`, `.merk`, `.voet-site`, `.formulier`, `.vink`, `.stappen`, `.tabel`, `.melding`, `.code-invoer`. Laden ná `huisstijl.css` |
 | `logo/` | Alle logovarianten als SVG, plus PNG's |
 | `brandbook-lesley-boys.pdf` | Het brandbook |
 | `voorbeeld.html` | Alle onderdelen op één pagina |
